@@ -7,17 +7,19 @@ const App = () => {
 
   return (
     <View style={styles.screen}>
-      <Text style={styles.text}>Welcome User </Text>
+      <Text style={styles.text}>Welcome User</Text>
       <TextInput
         keyboardType="number-pad"
         value={value1}
         style={styles.input}
+        placeholder={'add number 1'}
         onChangeText={(text: string) => setValue1(text)}
       />
       <TextInput
         keyboardType="number-pad"
         value={value2}
         style={styles.input}
+        placeholder={'add number 2'}
         onChangeText={(text: string) => setValue2(text)}
       />
       <Text style={styles.answer}>
@@ -46,6 +48,7 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderRadius: 5,
     marginVertical: 10,
+    height: 50,
   },
   answer: {
     fontSize: 18,
