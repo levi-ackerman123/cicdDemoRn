@@ -34,8 +34,8 @@ then
         # variables
         appCenterLoginApiToken=$APPCENTER_ACCESS_TOKEN
         locale="en_US"
-        appName="CI-CD-POC/cicdDemoApp-1"
-        deviceSetName="CI-CD-POC/android-devices"
+        appName="My-Demo-organisation/cicdDemoRn-1"
+        deviceSetName="My-Demo-organisation/android-devices"
         testSeriesName="test-series"
         appDebugPath=$APPCENTER_SOURCE_DIRECTORY/android/app/build/outputs/apk/debug/app-debug.apk
         appReleasePath=$APPCENTER_SOURCE_DIRECTORY/android/app/build/outputs/apk/release/app-release.apk
