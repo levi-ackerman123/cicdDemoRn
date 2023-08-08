@@ -16,7 +16,7 @@ CURR_DISPLAY_NAME="cicdDemoApp"
 NEW_DISPLAY_NAME="onmo-dev"
 PROJECT_NAME=cicdDemoApp
 STRING_XML_DIRECTORY=$APPCENTER_SOURCE_DIRECTORY/android/app/src/main/res/values
-STRINGS_XML_FILE=$APPCENTER_SOURCE_DIRECTORY/android/app/src/main/res/values/strings.xml
+STRINGS_XML_FILE=$STRING_XML_DIRECTORY/strings.xml
 INFO_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/ios/$PROJECT_NAME/Info.plist
 
 echo "-- Updating Android Display Name : Starts --"
