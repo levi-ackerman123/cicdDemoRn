@@ -12,14 +12,15 @@ echo "MY CUSTOM POST-CLONE SCRIPT..."
 # echo "Print content"
 # cat $APPCENTER_SOURCE_DIRECTORY/android/app/src/main/res/values/strings.xml
 
-NEW_DISPLAY_NAME=onmo-dev
+CURR_DISPLAY_NAME="cicdDemoApp"
+NEW_DISPLAY_NAME="onmo-dev"
 PROJECT_NAME=cicdDemoApp
 STRINGS_XML_FILE=$APPCENTER_SOURCE_DIRECTORY/android/app/src/main/res/values/strings.xml
 INFO_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/ios/$PROJECT_NAME/Info.plist
 
 
-echo "Updating NEW_DISPLAY_NAME name to $NEW_DISPLAY_NAME in strings.xml"
-sed "s/cicdDemoApp/$NEW_DISPLAY_NAME/" $STRINGS_XML_FILE
+echo "Updating $CURR_DISPLAY_NAME name to $NEW_DISPLAY_NAME in strings.xml"
+sed "s/$CURR_DISPLAY_NAME/$NEW_DISPLAY_NAME/" $STRINGS_XML_FILE
 
 echo "File content:"
 cat $STRINGS_XML_FILE
