@@ -1,7 +1,7 @@
 echo "MY CUSTOM POST-CLONE SCRIPT..."
 
 echo "Install xmlstarlet" 
-apt install xmlstarlet
+brew install xmlstarlet
 
 echo "Move to strings directory"
 cd android/app/src/main/res/values
