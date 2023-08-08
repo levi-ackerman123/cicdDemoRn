@@ -19,7 +19,7 @@ INFO_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/ios/$PROJECT_NAME/Info.plist
 
 
 echo "Updating NEW_DISPLAY_NAME name to $NEW_DISPLAY_NAME in strings.xml"
-sed -i 's/cicdDemoApp/$NEW_DISPLAY_NAME/' $STRINGS_XML_FILE
+sed 's/cicdDemoApp/$NEW_DISPLAY_NAME/' $STRINGS_XML_FILE
 
 echo "File content:"
 cat $STRINGS_XML_FILE
