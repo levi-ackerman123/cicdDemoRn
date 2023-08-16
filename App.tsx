@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
+import CodePush from 'react-native-code-push';
 
 const App = () => {
   const [value1, setValue1] = useState('');
@@ -29,7 +30,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default CodePush(App);
 
 const styles = StyleSheet.create({
   screen: {
@@ -45,7 +46,6 @@ const styles = StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderColor: 'black',
     borderRadius: 5,
     marginVertical: 10,
     height: 50,
@@ -53,5 +53,6 @@ const styles = StyleSheet.create({
   answer: {
     fontSize: 18,
     marginTop: 15,
+    color: '#000',
   },
 });

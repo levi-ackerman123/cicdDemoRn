@@ -14,4 +14,10 @@
     >
         ALWAYS_SEND
     </string>
+    <string 
+        moduleConfig="true" 
+        name="CodePushDeploymentKey"
+    >
+        yIkPbAT8X8dfpP845NJQ_uJNHhD7NY8dDwRyc
+    </string>
 </resources>
